@@ -7,16 +7,42 @@
 //
 
 #import "AppDelegate.h"
-
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import "RootViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+/*CocoaPods
+ 导入:IQKeyboardManager
+ platform:ios,'8.0'
+ target 'KeyBoard' do
+ pod 'IQKeyboardManager'
+ 
+ end
+ 
+ */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    RootViewController * root = [[RootViewController alloc]init];
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:root];
+    self.window.rootViewController = nav;
+    
+    //开启使用IQKeyBoard
+    [IQKeyboardManager sharedManager].enable = YES;
+//    点击空白区域键盘收回
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+//    关闭自带的工具条
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
+   
+
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

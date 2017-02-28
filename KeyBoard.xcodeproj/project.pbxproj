@@ -15,6 +15,9 @@
 		05C7C1FE1E617BFB007E0551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C7C1FC1E617BFB007E0551 /* LaunchScreen.storyboard */; };
 		05C7C2091E617BFB007E0551 /* KeyBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C7C2081E617BFB007E0551 /* KeyBoardTests.m */; };
 		05C7C2141E617BFB007E0551 /* KeyBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C7C2131E617BFB007E0551 /* KeyBoardUITests.m */; };
+		05C7C2241E617D61007E0551 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C7C2221E617D61007E0551 /* RootViewController.m */; };
+		05C7C2251E617D61007E0551 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C7C2231E617D61007E0551 /* RootViewController.xib */; };
+		6A1C2E7C59D0729812931EA0 /* libPods-KeyBoard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 141205B452D42F20060ED260 /* libPods-KeyBoard.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		05C7C20F1E617BFB007E0551 /* KeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C7C2131E617BFB007E0551 /* KeyBoardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyBoardUITests.m; sourceTree = "<group>"; };
 		05C7C2151E617BFB007E0551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C7C2211E617D61007E0551 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		05C7C2221E617D61007E0551 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		05C7C2231E617D61007E0551 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		141205B452D42F20060ED260 /* libPods-KeyBoard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KeyBoard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BA5245139ED6E85929D5D11 /* Pods-KeyBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyBoard/Pods-KeyBoard.release.xcconfig"; sourceTree = "<group>"; };
+		ED0713196A3DED220D2CEC56 /* Pods-KeyBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyBoard/Pods-KeyBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1C2E7C59D0729812931EA0 /* libPods-KeyBoard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03EEF187CA8B9BD57A488373 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED0713196A3DED220D2CEC56 /* Pods-KeyBoard.debug.xcconfig */,
+				5BA5245139ED6E85929D5D11 /* Pods-KeyBoard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		05C7C1E21E617BFB007E0551 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,8 @@
 				05C7C2071E617BFB007E0551 /* KeyBoardTests */,
 				05C7C2121E617BFB007E0551 /* KeyBoardUITests */,
 				05C7C1EC1E617BFB007E0551 /* Products */,
+				03EEF187CA8B9BD57A488373 /* Pods */,
+				340252310043209AD8478639 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +124,9 @@
 			children = (
 				05C7C1F11E617BFB007E0551 /* AppDelegate.h */,
 				05C7C1F21E617BFB007E0551 /* AppDelegate.m */,
+				05C7C2211E617D61007E0551 /* RootViewController.h */,
+				05C7C2221E617D61007E0551 /* RootViewController.m */,
+				05C7C2231E617D61007E0551 /* RootViewController.xib */,
 				05C7C1F41E617BFB007E0551 /* ViewController.h */,
 				05C7C1F51E617BFB007E0551 /* ViewController.m */,
 				05C7C1F71E617BFB007E0551 /* Main.storyboard */,
@@ -140,6 +164,14 @@
 			path = KeyBoardUITests;
 			sourceTree = "<group>";
 		};
+		340252310043209AD8478639 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				141205B452D42F20060ED260 /* libPods-KeyBoard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05C7C2181E617BFB007E0551 /* Build configuration list for PBXNativeTarget "KeyBoard" */;
 			buildPhases = (
+				E9B6485FE9B5595988DAA63F /* [CP] Check Pods Manifest.lock */,
 				05C7C1E71E617BFB007E0551 /* Sources */,
 				05C7C1E81E617BFB007E0551 /* Frameworks */,
 				05C7C1E91E617BFB007E0551 /* Resources */,
+				5E9836054B5404A104C613D5 /* [CP] Embed Pods Frameworks */,
+				A628FE583924BBAB9EAE4EBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +283,7 @@
 			files = (
 				05C7C1FE1E617BFB007E0551 /* LaunchScreen.storyboard in Resources */,
 				05C7C1FB1E617BFB007E0551 /* Assets.xcassets in Resources */,
+				05C7C2251E617D61007E0551 /* RootViewController.xib in Resources */,
 				05C7C1F91E617BFB007E0551 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +304,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E9836054B5404A104C613D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyBoard/Pods-KeyBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A628FE583924BBAB9EAE4EBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyBoard/Pods-KeyBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9B6485FE9B5595988DAA63F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05C7C1E71E617BFB007E0551 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +359,7 @@
 			files = (
 				05C7C1F61E617BFB007E0551 /* ViewController.m in Sources */,
 				05C7C1F31E617BFB007E0551 /* AppDelegate.m in Sources */,
+				05C7C2241E617D61007E0551 /* RootViewController.m in Sources */,
 				05C7C1F01E617BFB007E0551 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +507,7 @@
 		};
 		05C7C2191E617BFB007E0551 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0713196A3DED220D2CEC56 /* Pods-KeyBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeyBoard/Info.plist;
@@ -433,6 +519,7 @@
 		};
 		05C7C21A1E617BFB007E0551 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA5245139ED6E85929D5D11 /* Pods-KeyBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeyBoard/Info.plist;
@@ -507,6 +594,7 @@
 				05C7C21A1E617BFB007E0551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05C7C21B1E617BFB007E0551 /* Build configuration list for PBXNativeTarget "KeyBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +603,7 @@
 				05C7C21D1E617BFB007E0551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05C7C21E1E617BFB007E0551 /* Build configuration list for PBXNativeTarget "KeyBoardUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +612,7 @@
 				05C7C2201E617BFB007E0551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
